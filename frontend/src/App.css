@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: #ffffff;
+  padding: 3rem 2.5rem;
+  border-radius: 25px;
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.15);
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border: none;
+  border-radius: 15px;
+  padding: 1rem;
+  font-size: 1rem;
+  box-shadow: inset 5px 5px 10px #ddd, inset -5px -5px 10px #fff;
+  background: #f2f2f2;
+  transition: 0.3s;
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #764ba2;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+}
+
+.result {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.result.positive {
+  background: #e0f7e9;
+  color: #2e7d32;
+}
+
+.result.negative {
+  background: #ffe5e5;
+  color: #c62828;
+}
+
+.result.neutral {
+  background: #fff7cc;
+  color: #ff9800;
+}
+.result.joy span { color: gold; }
+.result.sadness span { color: steelblue; }
+.result.anger span { color: crimson; }
+.result.fear span { color: darkorange; }
+.result.love span { color: hotpink; }
+.result.surprise span { color: mediumseagreen; }
